@@ -1,0 +1,43 @@
+.preview-wrapper {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.preview-wrapper iframe {
+    height: 100%;
+    background-color: white;
+    width: 100%;
+}
+
+/*.react-draggable-transparent-selection .preview-wrapper:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    opacity: 0;*/
+/*}*/
+
+.react-draggable-transparent-selection .preview-wrapper {
+    pointer-events: none;
+}
+
+.preview-error {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: red;
+    font-family: serif;
+}
+
+.preview-error h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
